@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+$fast: .25s all ease-in-out;
+
+ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+
+  img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+body{
+    background: $black;
+}
+
+h1,h2{
+    color: $white;
+    text-transform: uppercase;
+}
+
+.btn{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  height: 45px;
+  font-size: .8em;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  transition: $fast;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.btn.white{
+  margin-top: 2rem;
+  background: $white;
+  color: $black;
+  &:hover{
+    background: #ec1d24;
+    color: $white;
+
+  }
+}
+
+.hidden{
+  overflow: hidden;
+}
